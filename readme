@@ -1,0 +1,9 @@
+This program is for connecting one computer with another and should be used with any RDP client and server.
+
+The program must be run on public server with flag s. And the program must be run on computer with RDP server with flag c.
+
+format input string for server: <name program> s <front port (for rdp client)> <back port (for rdp server)>
+(example: RDPconector s 60000 60001)
+format input string for client: <name program> c <front port (for rdp client)> <front host (for rdp client)>
+                                                   <back port (for rdp server)> <back host (for rdp server)>
+(example: RDPconector c 60001 127.0.0.1 60002 127.0.0.1)
