@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
     }
     char fl = argv[1][0];
     if (fl == 's')
-        server(argc, argv);
+        server(argv);
     else if (fl == 'c')
-        client(argc, argv);
+        client(argv);
     else
     {
         printf("wrong argument. use s or c like an argument");

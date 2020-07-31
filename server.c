@@ -48,7 +48,7 @@ void wrap_data(char *buff, int *numberBytes)
     *numberBytes = *numberBytes + hederLeng;
 }
 
-int server(int argc, char *argv[])
+int server(char *argv[])
 {
     int backAcceptSocket = init_accept_socket(atoi(argv[3]));
     int frontAcceptSocket = init_accept_socket(atoi(argv[2]));
@@ -99,4 +99,5 @@ int server(int argc, char *argv[])
         }
         backConnectionSocket = accept(backAcceptSocket, (struct sockaddr *) NULL, NULL);
     }
+    return 0;
 }

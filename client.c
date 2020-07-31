@@ -35,7 +35,7 @@ int connectSocket(char *host, int port)
     return frontBackSocket;
 }
 
-int client (int argc, char *argv[])
+int client (char *argv[])
 {
     char buff[bufLengs];
     int frontSocket = -1;

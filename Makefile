@@ -7,13 +7,9 @@ SRC = main.c server.c client.c
 OBJ = main.o server.o client.o
 INC = client.h server.h wrap_unwrap.h
 
-%.o: $(SRC) $(INC)
-	$(C) $(CFLAG) -c $(NAME) 
-
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	$(C) -o $(NAME) $(CFLAG) $(OBJ)
+all:
+	$(C) $(CFLAG) -c $(SRC)
+	$(C) $(CFLAG) -o $(NAME) $(OBJ)
 
 clean:
 	rm -f $(OBJ)
