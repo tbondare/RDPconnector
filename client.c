@@ -40,7 +40,10 @@ int client (char *argv[])
     char buff[bufLengs];
     int frontSocket = -1;
     while (frontSocket < 0)
+    {
         frontSocket = connectSocket(argv[3], atoi(argv[2]));
+        sleep(5);
+    }
     printf("Front connected");
     int numberBytes;
     int backSocket = -1;
